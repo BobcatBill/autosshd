@@ -11,7 +11,7 @@
 ### END INIT INFO
 
 #
-# autosshd This script starts and stops the autossh daemon
+# autosshd This script starts and stops the autossh daemon test here
 #
 # chkconfig: 2345 95 15
 # processname: autosshd
