@@ -33,7 +33,7 @@ NAME=autossh
 DAEMON=/usr/bin/$NAME
 TUNNEL_HOST=USER@HOSTNAME
 TUNNEL_PORT=$$
-DAEMON_ARGS=" -M 0 -f -nNT -R 1$TUNNEL_PORT:localhost:22 -o BatchMode=yes -o ServerAliveInterval=15 -o ServerAliveCountMax=1 -o StrictHostKeyChecking=no $TUNNEL_HOST"
+DAEMON_ARGS=" -M 0 -f -nNT -R 1$TUNNEL_PORT:localhost:22 -o BatchMode=yes -o ServerAliveInterval=15 -o ServerAliveCountMax=2 -o StrictHostKeyChecking=no $TUNNEL_HOST"
 DESC="autossh for reverse ssh"
 PIDFILE=/var/run/$NAME.pid
 export AUTOSSH_PIDFILE=$PIDFILE
